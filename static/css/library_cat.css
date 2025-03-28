@@ -1,0 +1,37 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  h5 {
+    font-weight: bold;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .btn-primary {
+    border-radius: 8px;
+  }
+  
+  #prevBtn, #nextBtn {
+    border-radius: 8px;
+  }
+  
+  #pageNum {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

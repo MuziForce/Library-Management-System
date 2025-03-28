@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Catalogs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/library_cat.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+ 
+    <h3 class="text-center mb-4">Library Catalog</h3>
+
+    
+    <div class="card p-4 shadow mb-4">
+      <h5>Search Books</h5>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" id="searchTitle" class="form-control" placeholder="Search by Title">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" id="searchISBN" class="form-control" placeholder="Search by ISBN">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" id="searchAuthor" class="form-control" placeholder="Search by Author">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" id="searchGenre" class="form-control" placeholder="Search by Genre">
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary" onclick="searchBooks()">Search</button>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="card p-3 shadow" id="catalogList">
+      <h5>Book Catalog</h5>
+      <ul id="bookList" class="list-group">
+      
+      </ul>
+    </div>
+
+   
+    <div class="d-flex justify-content-center mt-4">
+      <button class="btn btn-outline-secondary" id="prevBtn" onclick="prevPage()">Previous</button>
+      <span class="mx-3" id="pageNum">Page 1</span>
+      <button class="btn btn-outline-secondary" id="nextBtn" onclick="nextPage()">Next</button>
+    </div>
+  </div>
+
+  <script src="/public/js/library_cat.js"></script>
+  
+</body>
+</html>

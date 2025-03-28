@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  margin: 20px;
+  padding: 30px;
+  border: 2px solid #6c757d;
+  border-radius: 10px; 
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.search-bar {
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto; 
+}
+
+.search-bar input {
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 15px;
+  height: 45px;
+  border: 2px solid #ced4da;
+  border-radius: 25px;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #007bff; 
+  outline: none;
+}
+
+.search-bar .search-clear {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.profile-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff; 
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .card {
+      width: 90%;
+  }
+}

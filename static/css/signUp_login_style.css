@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* mobile responsiveness */
+  @media (max-width: 576px) {
+    .card {
+      width: 90%;
+    }
+  }
+  

@@ -1,0 +1,12 @@
+body {
+    background-color: #f4f4f4;
+  }
+  
+  h2 {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  

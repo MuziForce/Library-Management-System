@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Book</title>
+    <link rel="stylesheet" href="/public/css/admin_deletebook.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Book</h1>
+        <form id="deleteBookForm">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" placeholder="Search by title">
+            </div>
+
+            <div class="form-group">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" placeholder="Search by ISBN">
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" placeholder="Search by author">
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" placeholder="Search by genre">
+            </div>
+
+            <button type="submit" class="btn">Search & Delete Book</button>
+        </form>
+
+        
+        <div id="message" class="message" style="display: none;"></div>
+    </div>
+
+    <script src="/public/js/deleteBook.js"></script>
+</body>
+</html>

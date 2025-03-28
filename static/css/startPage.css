@@ -1,0 +1,27 @@
+body {
+    background-color: #e8f1f2; 
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    color: #2e3a46;
+}
+
+p.lead {
+    color: #6c757d;
+    max-width: 500px;
+}
+
+button.btn-primary {
+    background-color: #4d6f80;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 30px;
+}
+
+button.btn-primary:hover {
+    background-color: #39565f;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Reservation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/css/book_rev.css">
+</head>
+<body>
+ 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <div class="container mt-5">
+  
+    <div class="search-bar mb-4">
+      <input type="text" id="bookSearch" class="form-control" placeholder="Search for a book">
+      <button class="btn btn-outline-secondary mt-2" onclick="searchBook()">Search</button>
+    </div>
+
+   
+    <div class="card p-3 mb-4 shadow" id="searchResults">
+      <h5>Search Results</h5>
+      <ul id="resultsList" class="list-group">
+    
+      </ul>
+    </div>
+
+  
+    <div class="card p-3 mb-4 shadow" id="selectedBooks">
+      <h5>Selected Books</h5>
+      <ul id="selectedList" class="list-group">
+     
+      </ul>
+    </div>
+
+  
+    <div class="card p-3 mb-4 shadow">
+      <label for="reservationDate" class="form-label">Select Reservation Date</label>
+      <input type="date" id="reservationDate" class="form-control">
+    </div>
+
+ 
+    <div class="text-center">
+      <button class="btn btn-primary w-50" onclick="reserveBooks()">Reserve</button>
+    </div>
+  </div>
+
+  <script src="/public/js/book_rev.js"></script>
+</body>
+</html>

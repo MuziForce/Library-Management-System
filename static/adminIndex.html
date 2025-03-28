@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/adminIndex.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-5">Welcome Admin</h1>
+        <div class="row justify-content-center">
+        
+           
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-dark btn-block action-btn" onclick="window.location.href='/public/admin_addBook.html'">
+                    <h5>Add book</h5>
+                </button>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-dark btn-block action-btn" onclick="window.location.href='/public/admin_deletebook.html'">
+                    <h5>Delete book</h5>
+                </button>
+            </div>
+          
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-dark btn-block action-btn" onclick="window.location.href='/public/admin_searchBook.html'">
+                    <h5>Search book</h5>
+                </button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-dark btn-block action-btn" onclick="window.location.href='/public/admin_adduser.html'">
+                    <h5>Add User</h5>
+                </button>
+            </div>
+            
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-dark btn-block action-btn" onclick="window.location.href='/public/updateUser.html'">
+                    <h5>Update Student</h5>
+                </button>
+            </div>
+          
+            <div class="col-md-3 mb-4">
+                <button class="btn btn-outline-dark btn-block action-btn" onclick="window.location.href='/public/admin_acc.html'">
+                    <h5>Accounts</h5>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/public/js/adminIndex.js"></script>
+</body>
+</html>

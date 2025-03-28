@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update User Info</title>
+    <link rel="stylesheet" href="/public/css/updateUser.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Update User Info</h1>
+        <form id="searchUserForm">
+            <div class="form-group">
+                <label for="searchEmail">Search by Email:</label>
+                <input type="email" id="searchEmail" placeholder="Enter email to search" required>
+            </div>
+            <button type="submit" class="btn">Search User</button>
+        </form>
+
+       
+        <form id="updateUserForm" style="display: none;">
+            <h2>Edit User Information</h2>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Update name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Update email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Update password (leave blank to keep unchanged)">
+            </div>
+
+            <button type="submit" class="btn">Update User Info</button>
+            <button type="button" id="deleteUserBtn" class="btn delete-btn">Delete User</button>
+        </form>
+
+   
+        <div id="message" class="message" style="display: none;"></div>
+    </div>
+
+    <script src="/public/js/updateUser.js"></script>
+</body>
+</html>
